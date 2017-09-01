@@ -43,7 +43,6 @@ class User(models.Model):
     user_name = models.CharField(max_length=45)
     email = models.CharField(max_length=45, default='none')
     password = models.CharField(max_length=100)
-    date_hired = models.DateTimeField(auto_now_add=True)
     created_at = models.DateTimeField(auto_now_add = True)
     updated_at = models.DateTimeField(auto_now = True)
     objects = UserManager()
